@@ -1,3 +1,14 @@
 <?php
-echo "<h1>funciona</h1>"
+$a=5;
+$b=3;
+echo $a += $b;
+echo"<br>";
+echo $a -= $b;
+echo"<br>";
+echo $a *= $b;
+echo"<br>";
+echo $a /= $b;
+echo"<br>";
+echo $a .= $b;
+echo"<br>";
 ?>
