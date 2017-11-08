@@ -6,8 +6,7 @@ if (!isset($_POST['enviar'])){
 ?>
  <form action="" method="post">
  Introduce una cadena:
- <br/>
- Numero: <input type="text" name="cadena">
+ <input type="text" name="cadena">
  <br/>
 <input type="submit" name="enviar">
  </form>
@@ -32,5 +31,6 @@ else
     
 }
 ?>
+<a href="index.php" ><input type="button" value="Volver" ></a>
 </body>
 </html>

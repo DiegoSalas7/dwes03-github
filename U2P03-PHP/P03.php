@@ -18,7 +18,7 @@ if (!isset($_POST['enviar'])){
 else {
     $num1=$_POST['numero1'];
     $num2=$_POST['numero2'];
-    $resta=0;
+    $resta=$num1-$num2;
     $asterisco="";
     $almohadilla="";
     
@@ -27,34 +27,23 @@ else {
         alert("Los numeros son menores de 0 o mayores de 10");
     }else{
         
-        if($num1 > $num2){
-            while($num2<$num1 ){
-                
-                $asterisco.="*";
-                
-                $num2++;
-                $resta++;
-                
-            }
+        while($num2<$num1 ){
             
-            echo $asterisco;
+            $asterisco.="*";
+            
+            $num2++;
         }
         
-        
-        else if ($num1 < $num2){
-            
-            while($num1<$num2 ){
-                
-                $asterisco.="*";
-                
-                $num1++;
-                $resta++;
-            }
-            
-            echo $asterisco;
-        }
+        echo $asterisco;
     
+        while($num1<$num2 ){
+            
+            $asterisco.="*";
+            
+            $num1++;
+        }
         
+        echo $asterisco;
         
         for($i=0;$i<$resta;$i++)
         {
@@ -67,10 +56,7 @@ else {
     }
 }
 ?>
-
-<a href="index.php" ><input type="button" value="Volver" ></a>
 </body>
-
 </html>
 
 
